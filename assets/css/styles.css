@@ -114,6 +114,7 @@ body {
 @media (max-width: 768px) {
   .popup{
     padding: 1rem;
+    height: 100%;
   }
   
   .popupbox{
@@ -136,7 +137,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 775;
     margin-top: -50px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   .popupcontent p{
@@ -173,12 +174,17 @@ body {
 
 #formcard {
   position: relative;
-  padding: 38px;
+  padding: 20px 38px;
   background: #4951eb81;
   border-radius: 40px;
   border-bottom-left-radius: 0;
   border-top-right-radius: 0;
   margin-left: 0;
+}
+
+.successmsg{
+color: rgb(88, 240, 88); 
+display: none;
 }
 
 .col-md-6.left-box {
