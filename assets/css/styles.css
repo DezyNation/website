@@ -18,6 +18,7 @@ body {
 
 .popup{
   position: fixed;
+  top: 0;
   width: 100vw;
   height: 100vh;
   padding: 7rem 20rem;
@@ -135,6 +136,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 775;
     margin-top: -50px;
+    margin-bottom: 5px;
   }
 
   .popupcontent p{
@@ -195,6 +197,9 @@ body {
 
 @media (max-width: 768px) {
   #hero {
+    position: absolute;
+    top: 0;
+    left: 0;
     background: linear-gradient(0deg, black, rgba(0,0,0,0.45)), url("../../assets/img/mainbg.jpg") center / cover no-repeat, rgba(0,0,0,0.77);
     width: 100%;
     height: inherit;
@@ -208,8 +213,6 @@ body {
     max-width: 22rem;
   }
 }
-
-
 
 
 .col-md-4 {
@@ -226,6 +229,7 @@ body {
 #benefits{
   width: 100vw;
   height: 100vh;
+  margin-top: 40rem;
   background: #810034;
   color: white;
   display: grid;
@@ -267,7 +271,8 @@ body {
 
 @media (max-width: 768px) {
   #benefits{
-      width: 100vw;
+    margin-top: 60rem;
+      width: auto;
       height: auto;
       display: grid;
       grid-template-columns: 1fr;
