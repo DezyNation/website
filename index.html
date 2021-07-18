@@ -106,11 +106,12 @@
                     <p class="main-para" style="padding: 0px;">We've helped people and business with all budgets get their website online.<br>Get yours today!</p>
                 </div>
                 <div class="col-md-6 right-box">
-                    <form id="formcard">
+                    <form id="formcard" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeHQGwM7yefO4yQoLR8v9sriftId-Ya2-jTe7r-9T8iMXuwow/formResponse" target="_blank" method="POST">
                         <h2 class="text-center">Contact Form</h2>
-                        <div class="form-group"><input class="border rounded form-control" type="text" name="name" placeholder="Name" required=""></div>
-                        <div class="form-group"><input class="form-control is-invalid" type="email" name="email" placeholder="Email" required=""></div>
-                        <div class="form-group"><textarea class="form-control" name="message" placeholder="Enter your query here along with your budget (if any)" rows="14" style="height: 179px;" required=""></textarea></div>
+                        <div class="form-group"><input class="border rounded form-control" type="text" name="entry.216694594" placeholder="Name" required=""></div>
+                        <div class="form-group"><input class="form-control is-invalid" type="email" name="entry.1583996066" placeholder="Email" required=""></div>
+                        <div class="form-group"><input class="border rounded form-control" type="text" name="entry.39710786" placeholder="Budget" ></div>
+                        <div class="form-group"><textarea class="form-control" name="entry.1315843728" placeholder="Enter your query here along with your budget (if any)" rows="14" style="height: 179px;" required=""></textarea></div>
                         <div class="form-group"><button class="btn btn-primary" type="submit"><i class="fa fa-send"></i>&nbsp;Send </button></div>
                     </form>
                 </div>
@@ -449,6 +450,14 @@
 
          close.addEventListener('click', () => {
             popup.style.display = "none"
+         })
+     </script>
+     <script>
+         const formcard = document.getElementById("formcard");
+
+         formcard.addEventListener("submit", (e) => {
+             e.preventDefault();
+             console.log("Details Submitted!")
          })
      </script>
 </body>
