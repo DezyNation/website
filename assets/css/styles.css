@@ -511,7 +511,8 @@ h1 {
 .neumorphic-cards:hover{
   transform: scale(1.1);
   cursor: pointer;
-  background: linear-gradient(150deg, rgb(56, 12, 158), rgb(180, 180, 180));
+  background: linear-gradient(150deg, rgb(29, 4, 87), rgb(27, 69, 207));
+  border: 1px solid #fff;
   color: white;
 }
 
@@ -534,8 +535,8 @@ h1 {
 }
 
 .gbtn:hover{
-transform: translateY(-10px);
-box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+  background: fuchsia;
+  border: 1px solid #fff;
 }
 
 .wcontent{
@@ -547,4 +548,9 @@ box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
   border-radius: 25px;
   background-color: rgba(148,36,235,0.31);
   padding: 5px 10px;border-color: #7371dd;
+}
+
+#card-btn:hover{
+  background-color: rgba(118, 226, 17, 0.31);
+  border-color: #59db0e;
 }

@@ -13,10 +13,17 @@
 
 </head>
 <body>
+
+    <div class="loadWrapper" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #fff; z-index: 20;">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_8qibmdea.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+        <br>
+        <h2 style="color: darkslategrey; text-align: center;">We are getting images for you...<br>Thanks for your patience</h3>
+    </div>
+    
     <a href="index.html"><div class="home"><img src="assets/img/LogoCircle.png" alt="Home"></div></a>
     <a href="index.html#formcard"><div class="hireme"><img src="assets/img/mailico.png" alt="Hire Me"></div></a>
     <div class="portfolio-menu">
-        <a href="#"><div id="menu-item"><img src="assets/img/worldico.png" class="plogo" alt="Logo Designs"></div></a>
+        <a href="#"><div id="menu-item" class="selected"><img src="assets/img/worldico.png" class="plogo" alt="Logo Designs"></div></a>
         <a href="web-portfolio.html"><div id="menu-item"><img src="assets/img/webico.png" class="pweb" alt="Web Designs"></div></a>
         <a href="graphics-portfolio.html"><div id="menu-item"><img src="assets/img/graphics.png" class="pgraphics" alt="Other Graphic Designs"></div></a>
     </div>
@@ -33,6 +40,15 @@
             <div id="grid-item" class="item8"><h2>item8</h2></div>
         </div>
     </section>
+ 
     
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        let loadWrapper = document.querySelector('.loadWrapper')
+
+        window.addEventListener('load', function () {
+            loadWrapper.parentElement.removeChild(loadWrapper)
+        })
+    </script>
 </body>
 </html>

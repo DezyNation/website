@@ -2,6 +2,9 @@
   background: url(mountain_bg.jpg) #444;
   background-size: cover;
   padding-bottom: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width:768px) {
