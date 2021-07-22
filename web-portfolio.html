@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DezyNation- Web Portfolio</title>
     <link rel="stylesheet" href="assets/css/portfoliostyle.css">
+    <link rel="stylesheet" href="assets/css/swipebox.css">
     <link rel="shortcut icon" href="assets/img/LogoCircle.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,11 +34,21 @@
         <h1>Web Designs</h1>
 
         <div class="websites-grid">
-            <div id="grid-item" class="item1 w-item1"></div>
-            <div id="grid-item" class="item2 w-item2"></div>
-            <div id="grid-item" class="item4 w-item4"></div>
-            <div id="grid-item" class="item5 w-item5"></div>
-            <div id="grid-item" class="item8 w-item8"></div>
+            <div id="grid-item" class="item1 w-item1">
+                <a href="assets/portfolioimgs/websites/index.jpg" rel="Web" class="item-link swipebox" title="Fetch Loans">
+                </a></div>
+            <div id="grid-item" class="item2 w-item2">
+                <a href="assets/portfolioimgs/websites/marhaba.jpg" rel="Web" class="item-link swipebox" title="Marhaba">
+                </a></div>
+            <div id="grid-item" class="item4 w-item4">
+                <a href="assets/portfolioimgs/websites/mkumar.jpg" rel="Web" class="item-link swipebox" title="MKumar">
+                </a></div>
+            <div id="grid-item" class="item5 w-item5">
+                <a href="assets/portfolioimgs/websites/servocliq.jpg" rel="Web" class="item-link swipebox" title="Servocliq">
+                </a></div>
+            <div id="grid-item" class="item8 w-item8">
+                <a href="assets/portfolioimgs/websites/surgeons.jpg" rel="Web" class="item-link swipebox" title="Surgeons Website">
+                </a></div>
         </div>
 
     </section>
@@ -50,5 +61,14 @@
             loadWrapper.parentElement.removeChild(loadWrapper)
         })
     </script>
+    <script src="assets/lib/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.swipebox.js"></script>
+    <script type="text/javascript">
+        ;( function( $ ) {
+        
+            $( '.swipebox' ).swipebox();
+        
+        } )( jQuery );
+        </script>
 </body>
 </html>
