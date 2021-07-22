@@ -219,10 +219,10 @@ html{
     grid-area: item1;
 }
 .w-item1{
-    background: url("../portfolioimgs/websites/index.png") center / cover no-repeat;
+    background: url("../portfolioimgs/websites/index.jpg") center / cover no-repeat;
 }
 .g-item1{
-    background: url("../portfolioimgs/graphics/landscape.png") center / cover no-repeat;
+    background: url("../portfolioimgs/graphics/landscape.jpg") center / cover no-repeat;
 }
 
 
@@ -233,7 +233,7 @@ html{
     background: url("../portfolioimgs/websites/marhaba.jpg") center / cover no-repeat;
 }
 .g-item2{
-    background: url("../portfolioimgs/graphics/trees.png") center / cover no-repeat;
+    background: url("../portfolioimgs/graphics/trees.jpg") center / cover no-repeat;
 }
 
 
@@ -249,7 +249,7 @@ html{
     grid-area: item4;
 }
 .w-item4{
-    background: url("../portfolioimgs/websites/mkumar.png") center / cover no-repeat;
+    background: url("../portfolioimgs/websites/mkumar.jpg") center / cover no-repeat;
 }
 
 
@@ -257,7 +257,7 @@ html{
     grid-area: item5;
 }
 .w-item5{
-    background: url("../portfolioimgs/websites/servocliq.png") center / cover no-repeat;
+    background: url("../portfolioimgs/websites/servocliq.jpg") center / cover no-repeat;
 }
 
 
