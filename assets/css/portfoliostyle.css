@@ -273,6 +273,9 @@ html{
 .w-item5{
     background: url("../portfolioimgs/websites/servocliq.jpg") center / cover no-repeat;
 }
+.l-item5{
+    background: url("../portfolioimgs/logos/butterfly.png") center / contain no-repeat;
+}
 
 
 .item6{
@@ -297,6 +300,3 @@ html{
 .g-item8{
     background: url("") center / cover no-repeat;
 }
-
-
-
