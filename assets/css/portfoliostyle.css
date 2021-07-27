@@ -162,8 +162,6 @@ html{
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.7);
-    border: 1px solid;
-    border-color: rgb(51, 49, 49);
     z-index: 2;
 }
 
@@ -232,6 +230,9 @@ html{
 .w-item1{
     background: url("../portfolioimgs/websites/index.jpg") center / cover no-repeat;
 }
+.l-item1{
+    background: url("../portfolioimgs/logos/trihexLabst.png") center / contain no-repeat;
+}
 .g-item1{
     background: url("../portfolioimgs/graphics/landscape.jpg") center / cover no-repeat;
 }
@@ -244,7 +245,8 @@ html{
     background: url("../portfolioimgs/websites/marhaba.jpg") center / cover no-repeat;
 }
 .g-item2{
-    background: url("../portfolioimgs/graphics/trees.jpg") center / cover no-repeat;
+    background: url("../portfolioimgs/graphics/footballAcademy.png") center / contain no-repeat;
+    background-color: transparent !important;
 }
 
 
@@ -289,6 +291,9 @@ html{
 .item7{
     grid-area: item7;
 }
+.l-item7{
+    background: url("../portfolioimgs/logos/travel.png") center / contain no-repeat;
+}
 
 
 .item8{
@@ -296,6 +301,9 @@ html{
 }
 .w-item8{
     background: url("../portfolioimgs/websites/surgeons.jpg") center / cover no-repeat;
+}
+.l-item8{
+    background: url("../portfolioimgs/logos/flame.png") center / contain no-repeat;
 }
 .g-item8{
     background: url("") center / cover no-repeat;
