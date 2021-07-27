@@ -10,6 +10,19 @@ html{
     color: white;
 }
 
+.loader{
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
 .home{
     position: sticky;
     top: 1rem;
