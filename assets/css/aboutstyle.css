@@ -10,13 +10,15 @@ body{
 
 section{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: inherit;
 }
 
 .main{
     position: relative;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: inherit;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -31,6 +33,10 @@ section{
     align-self: center;
     justify-self: center;
     color: darkslategray;
+}
+
+.sangam-section{
+    height: auto;
 }
 
 .dezyner{
@@ -90,21 +96,6 @@ section{
     color: dimgray;
 }
 
-.photo{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, rgb(0, 255, 200), rgb(65, 225, 105));
-}
-
-img{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-}
 
 
 #path3708{
