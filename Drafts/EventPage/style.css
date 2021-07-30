@@ -318,5 +318,9 @@ form{
     #submit{
         margin-left: 25%;
     }
+
+    .banner{
+        bottom: -450vh
+    }
     
 }
