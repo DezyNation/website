@@ -88,7 +88,7 @@ button:hover{
   }
 
 .form-area{
-    width: 60vw;
+    min-width: 60vw;
     height: auto;
     position: relative;
     top: 10rem;
