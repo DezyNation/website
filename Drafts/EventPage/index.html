@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">EVENT NAME</div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#guests">GUESTS</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta"><button>CONTACT</button></a>
+    </header>
+
+    <div class="formbg">
+        <div class="form-area">
+        <div class="form-heading"><h1>PARTICIPATION FORM</h1></div>
+        <form action="#">
+            <div class="name-area">
+                <input type="text" name="First Name" id="name" placeholder="First Name">
+                <input type="text" name="Last Name" id="name" placeholder="Last Name">
+            </div>
+            <input type="text" name="Email" id="email" class="formLabel" placeholder="Email ID"><br>
+            <div class="deptselection">
+            <label for="department" class="formLabel">Choose your department:</label>
+            <select id="department" name="Department">
+            <option value="CS">CS</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Law">Law</option>
+            <option value="Science" selected>Science</option>
+            </select>
+            </div>
+            <h3 class="formLabel">Select your course year:</h3>
+            <div class="formLabel year">
+                <input type="radio" id="year" name="Course_year" value="1">
+                <label for="year">1</label><br>
+                <input type="radio" id="year" name="Course_year" value="2">
+                <label for="year">2</label><br>
+                <input type="radio" id="year" name="Course_year" value="3">
+                <label for="year">3</label><br>
+                <input type="radio" id="year" name="Course_year" value="3+">
+                <label for="year">3+</label>
+            </div>
+            <br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        </div>
+    </div>
+
+    <section class="event-section">
+        <div id="about">
+        <h1>About This Event</h1><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam quos distinctio sit, reprehenderit fugit atque soluta doloribus esse ducimus doloremque libero rem non, provident dolore molestias neque! Modi, doloremque.</p>
+        </div>
+        <h1>Our Guests</h1>
+        <div id="guests">
+            <div class="img-div"><img src="guest1.jpg" alt="Guest1"><br><h3>Guest 1</h3><p>Cheif Guest</p></div>
+            <div class="img-div"><img src="guest2.jpg" alt="Guest2"><br><h3>Guest 1</h3><p>Special Guest</p></div>
+            <div class="img-div"><img src="guest3.jpg" alt="Guest3"><br><h3>Guest 1</h3><p>H.O.D</p></div>
+        </div>
+    </section>
+
+    <script>
+        //Form Script to be added here
+    </script>
+</body>
+</html>
