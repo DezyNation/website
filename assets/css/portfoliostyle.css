@@ -339,13 +339,13 @@ html{
 .container .samples{
     width: 90%;
     height: auto;
-    margin: 1rem auto;
+    margin: 4rem auto;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .container .samples .sample_item{
