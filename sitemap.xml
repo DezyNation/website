@@ -13,22 +13,7 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://dezynation.com/ngo.html</loc>
-  <lastmod>2021-07-28T11:44:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dezynation.com/web-portfolio.html</loc>
-  <lastmod>2021-07-28T11:44:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dezynation.com/logo-portfolio.html</loc>
-  <lastmod>2021-07-28T11:44:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dezynation.com/graphics-portfolio.html</loc>
+  <loc>https://dezynation.com/portfolio.html</loc>
   <lastmod>2021-07-28T11:44:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -43,7 +28,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dezynation.com/termsconditions.html</loc>
+  <loc>https://dezynation.com/terms.html</loc>
   <lastmod>2021-07-28T11:44:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
