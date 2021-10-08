@@ -133,6 +133,7 @@ nav{
 .cta:hover{
   background: yellow;
   color: #000 !important;
+  cursor: pointer;
 }
 .cta a, .pay a{
   color: inherit;
@@ -402,6 +403,7 @@ nav{
   position: relative;
   width: 350px;
   height: 275px;
+  margin-right: 4rem;
   padding: 1rem;
   background: linear-gradient(180deg, blue, navy);
   color: #fff;
