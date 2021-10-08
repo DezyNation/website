@@ -403,7 +403,7 @@ nav{
   position: relative;
   width: 350px;
   height: 275px;
-  margin-right: 4rem;
+  margin: 0 2rem;
   padding: 1rem;
   background: linear-gradient(180deg, blue, navy);
   color: #fff;
