@@ -48,6 +48,28 @@ a{
   cursor: pointer;
 }
 
+.scrollable-wrapper{
+  position: relative;
+  width: 100%;
+  height: auto ;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.scrollable-wrapper::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+
 
 /* Navbar styling starts here */
 header{
@@ -350,26 +372,6 @@ nav{
   color: blue;
 }
 
-.scrollable-wrapper{
-  position: relative;
-  width: 100%;
-  height: 500px ;
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  overflow: -moz-scrollbars-none;
-  -ms-overflow-style: none;
-}
-.scrollable-wrapper::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
-}
-
 .pricing-card{
   position: relative;
   width: 275px;
@@ -399,11 +401,11 @@ nav{
   color: darkslategray;
 }
 
+
 .feedback-card{
-  position: relative;
   width: 350px;
-  height: 275px;
-  margin: 0 2rem;
+  height: auto;
+  margin-right: 1rem;
   padding: 1rem;
   background: linear-gradient(180deg, blue, navy);
   color: #fff;
