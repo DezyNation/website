@@ -406,7 +406,7 @@ nav{
   width: auto;
   height: auto;
   margin-right: 1rem;
-  padding: 1rem;
+  padding-bottom: 1rem;
   background: linear-gradient(180deg, blue, navy);
   color: #fff;
   border-radius: 10px;
