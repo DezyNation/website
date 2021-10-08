@@ -403,7 +403,7 @@ nav{
 
 
 .feedback-card{
-  width: 350px;
+  width: auto;
   height: auto;
   margin-right: 1rem;
   padding: 1rem;
