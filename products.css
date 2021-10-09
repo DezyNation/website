@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+    padding-top: 2rem;
+    padding-left: 5px;
+}
+
+.heading{
+    margin-left: 1rem;
+    margin-top: 5vh;
+    font-size: 2rem;
+}
+.color-bar{
+    margin-left: 1rem;
+    margin-bottom: 5vh;
+    width: 50px;
+    height: 5px;
+    background: rgb(253, 220, 170);
+}
+
+
+header{
+    position: fixed;
+    top: 25vh;
+    right: 1%;
+    width: 50px;
+    height: auto;
+    z-index: 50;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item{
+    width: 50px;
+    height: 50px;
+    margin: .5rem 0;
+    border-radius: 50%;
+    background: radial-gradient( rgb(255, 166, 32), rgb(253, 185, 82));
+    display: grid;
+    place-content: center;
+    transition: all .5s ease;
+}
+.menu-item:hover{
+    background: linear-gradient(-150deg, blue, fuchsia)
+}
+.menu-item img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.call{
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    background: linear-gradient(-120deg, fuchsia, rgb(195, 0, 195)) !important;
+    z-index: 50;
+    box-shadow: 4px 4px 10px rgb(170, 170, 170);
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10vh;
+}
+.banner img{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.banner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 5;
+}
+.overlay h1{
+    font-size: 4rem;
+}
+
+
+.scrollable-products-div{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+.scrollable-products-div::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.product-card{
+    width: 225px;
+    height: auto;
+    margin-right: 4rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    background: #fff;
+    transition: all .5s ease;
+}
+.product-card:hover{
+    box-shadow: 5px 5px 15px rgb(190, 190, 190);
+}
+.product-img{
+    width: inherit;
+    height: 125px;
+    object-fit: cover;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.product-content{
+    width: inherit;
+    padding: .5rem;
+}
+.product-description{
+    margin-top: 5px;
+    font-size: .9rem;
+}
+.read-more-link{
+    cursor: pointer;
+}
+.product-enquiry{
+    width: 100px;
+    height: auto;
+    margin-top: .5rem;
+    padding: 2.5px 0;
+    border: 2px solid rgb(255, 166, 32);
+    background: none;
+    transition: all .4s ease;
+}
+.product-enquiry a{
+    text-decoration: none;
+    color: rgb(255, 166, 32);
+    font-size: .9rem;
+}
+.product-enquiry:hover{
+    background: rgb(255, 166, 32);
+}
+.product-enquiry a:hover{
+    color: #fff;
+}
+
+
+
+footer{
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(253, 163, 27);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.notice{
+    position: relative;
+    width: 100%;
+    padding-left: 1rem;
+    color: #fff;
+    border-right: 2px solid #fff;
+}
+.social{
+    padding-left: 20vw;
+    color: #fff;
+}
+.social-links{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.social-icon img{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+
+    .extra-space{
+        position: relative;
+        width: 100%;
+        height: 10vh;
+    }
+    header{
+        top: unset;
+        right: unset;
+        bottom: 2%;
+        width: 90%;
+        height: 50px;
+    }
+    .menu{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .arrow{
+        display: none;
+    }
+    .call{
+        right: 1%;
+    }
+
+
+    .overlay h1{
+        font-size: 2rem;
+    }
+
+
+    footer>*{
+        transform: scale(.8);
+    }
+    .notice{
+        padding-left: 5px;
+    }
+    .social{
+        padding-left: 0;
+    }
+
+}
+
+
+/* !!!! Don't mess with this code !!!! */
+
+#lightbox-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.4);
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+#lightbox-section::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.lightbox{
+    width: 80vw;
+    background: #fff;
+    border-radius: 15px;
+    height: auto;
+    padding: 1rem;
+}
+.lightbox-img{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.lightbox-head{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.close-btn{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.contact-div{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: .25rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.contact-div a{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+}
+.contact-div--img{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .lightbox{
+        width: 90%;
+    }
+    .lightbox-img{
+        width: 200px;
+        height: 150px;
+        top: 2%;
+        left: calc(50% - 100px);
+    }
+    .lightbox-head{
+        top: 90px;
+    }
+}
