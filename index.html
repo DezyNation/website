@@ -222,24 +222,46 @@
         <span class="color-bar"></span>
         <h1>What our clients say</h1>
         <span class="color-bar"></span>
+        <a href="https://g.page/dezynation?share" target="_blank" class="google-link">Check out our Google Business Profile for more reviews</a>
     </div>
     <br>
-    <br>
-    <div class="scrollable-wrapper">
+    <div class="feedback-wrapper">
         <div class="feedback-card">
-            <img src="assets/img/gaurav.jpeg" alt="Gaurav" class="client-img">
             <div class="card-content">
                 <h3>Gaurav</h3>
-                <h5>Yupsa Accessories</h5>
-                <br>
-                <p class="feedback-msg">"The work was very professionally done. Our requirements and needs were satisfied! Liked the experience."</p>
-                <br>
-                <p>Logo Design</p>
+                <h5>&starf;&starf;&starf;&starf;&starf;</h5>
+                <p class="feedback-msg">The work was very professionally done. Our requirements and needs were satisfied! Liked the experience.</p>
             </div>
         </div>
     </div>
 
+    <br>
+    <br>
+    <br>
+    <div class="affiliates">
+        <h3>We've partnered with hosting companies, so you don't have to go anywhere else for discounts. <br>Click on any hosting provider to get the offer.</h3>
+        <div class="partners">
+            <img src="assets/img/Hostinger_Horizontal_Purple.png" alt="Hostinger" class="hostinger" onclick="openLightbox(1)">
+            <img src="assets/img/Hostgator-logo.png" alt="Hostgator" class="hostgator" onclick="openLightbox(2)">
+        </div>
+    </div>
 
+
+    <section id="affiliate-offer">
+        <div class="lightbox">
+            <img src="assets/img/hostingerOffer.png" alt="Offer" id="lightboxImage">
+            <br>
+            <div class="lightbox-content">
+                <p>Use this coupon code on <strong><span id="lightboxCompany">Hostinger</span></strong> website during checkout:</p>
+                <h3 id="lightboxCode">DIWALI2021</h3>
+                <p style="color: green; display: none;" id="copySuccess">Code copied!</p>
+                <div class="btn-div"><a href="https://www.hostg.xyz/aff_c?offer_id=264&aff_id=92097" target="_blank" id="lightboxLink">Let's Go &#10148;</a></div>
+            </div>
+        </div>
+        <div id="close-btn" onclick="closeLightbox()"><h3>X</h3></div>
+    </section>
+
+    <!-- Footer starts here -->
     <footer>
         <div class="footercontainer">
             <div class="row">
@@ -309,6 +331,7 @@
         alert("Thanks! We will contact you soon")
         }   
     </script>
+    <script src="assets/js/lightbox.js"></script>
     
 </body>
 </html>
