@@ -161,18 +161,6 @@ nav{
   color: inherit;
 }
 
-.pay{
-  width: 40%;
-  height: 70%;
-  background: none;
-  border: 2px solid rgb(100, 100, 255);
-  color: rgb(100, 100, 255) !important;
-  transition: all .3s ease;
-}
-.pay:hover{
-  background: rgb(100, 100, 255);
-  color: #fff !important;
-}
 
 @media (max-width: 768px) {
   .logo, .logo > *{
@@ -724,7 +712,7 @@ nav{
   height: 50px;
   border-radius: 50%;
   bottom: 5%;
-  right: 2.5%;
+  left: 2.5%;
   cursor: pointer;
   z-index: 50;
 }
