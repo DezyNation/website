@@ -473,7 +473,7 @@ nav{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .clients-wrapper a{
@@ -481,6 +481,7 @@ nav{
   max-width: 150px;
 }
 .clients-wrapper a img{
+  margin: 1rem;
   max-width: 150px;
   height: auto;
 }
