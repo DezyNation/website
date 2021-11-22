@@ -489,6 +489,11 @@ nav{
   width: 75px;
   height: auto;
 }
+@media (max-width: 768px) {
+  .clients-wrapper a img{
+    max-width: 80px;
+  }
+}
 
 
 #affiliate-offer{
