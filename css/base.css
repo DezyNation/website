@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.main-area{
+  position: relative;
+  top: 12vh;
+  width: 100%;
+  height: auto;
+}
+
+.heading{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading h1{
+  font-size: 3rem;
+  text-align: center;
+}
+.color-bar{
+  width: 10%;
+  height: 1rem;
+  margin: 0 auto;
+  align-self: center;
+  background: yellow;
+}
+.subheading{
+  text-align: center;
+  color: darkslategray;
+}
+.hidden-iframe{
+  position: relative;
+  width: 100%;
+  height: 0;
+  display: none;
+}
+#blue-txt{
+  color: blue;
+}
+#orange-txt{
+  color: orange;
+}
+#green-txt{
+  color: green;
+}
+a{
+  width: 100%;
+  height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.scrollable-wrapper{
+  position: relative;
+  width: 100%;
+  height: auto ;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.scrollable-wrapper::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+
+
+/* Navbar styling starts here */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background: #222;
+  color: #fff;
+  z-index: 50;
+}
+
+nav{
+  position: relative;
+  width: 100%;
+  height: inherit;
+  padding: 5px 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  position: relative;
+  width: 10%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.logo-img{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo-title{
+  margin-left: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu{
+  position: relative;
+  width: 40%;
+  margin-left: 10%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-item{
+  padding: 5px;
+  color: #fff;
+  transition: all .3s ease;
+}
+.menu-item:hover{
+  background: orange;
+}
+
+.btn-group{
+  position: relative;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta{
+  width: 10%;
+  height: 70%;
+  background: none;
+  border: 2px solid yellow;
+  color: yellow !important;
+  transition: all .3s ease;
+}
+.cta:hover{
+  background: yellow;
+  color: #000 !important;
+  cursor: pointer;
+}
+.cta a, .pay a{
+  color: inherit;
+}
+
+
+@media (max-width: 768px) {
+  .heading h1{
+    font-size: 1.75rem;
+  }
+  .color-bar{
+    width: 6%;
+    height: .4rem;
+  }
+
+  .logo, .logo > *{
+    transform: scale(0.9);
+  }
+  .logo-title{
+    display: none;
+  }
+
+  .menu{
+    display: none;
+  }
+  .cta{
+    width: 40%;
+  }
+}
+
+/* Navbar ends here */
+
+
+@media (min-width: 768px) {
+    .scrollable-wrapper{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+  .color-bar{
+    width: 40%;
+  }
+}
+
+
+/* Footer Styling Starts Here */
+
+footer{
+    position: relative;
+    margin-top: auto;
+    padding: 2rem 1rem 0;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-row{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.footer-column{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.footer-heading{
+    position: relative;
+    margin-bottom: .5rem;
+    width: 100%;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #FFF;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease;
+}
+.down-arrow{
+    transform: rotateZ(-90deg);
+    transition: all .5s ease;
+}
+.footer-link{
+    position: relative;
+    margin-top: 0.75rem;
+    width: 100%;
+    color: aqua;
+}
+
+.footer-branding{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+}
+.footer-desc{
+    color: #FFF;
+    max-width: 75%;
+}
+
+.social-heading{
+    min-width: 100px;
+    color: #FFF;
+}
+.social{
+    position: relative;
+    width: 100%;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.social p{
+    text-align: center;
+    align-self: center;
+}
+
+
+@media (max-width: 768px) {
+
+    .title-medium{
+        font-size: 1.5rem;
+    }
+    .title-medium--subheading{
+        font-size: 1rem;
+    }
+
+    nav{
+        height: 9.6vh;
+        padding: .9rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .logo-font{
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
+    
+    .menu{
+        margin: .5rem 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #menu-alt{
+        display: unset;
+    }
+
+    .services-menu{
+        top: 6vh;
+        left: 26vw;
+        right:  unset;
+        width: 220px;
+    }
+
+    .footer-row{
+        flex-direction: column;
+    }
+    .branding-column{
+        width: 80% !important;
+    }
+    .footer-column{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .footer-desc{
+        max-width: 100%;
+    }
+}
+  
+/* Footer styling ends here */
+
+
+
+.up-arrow{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 5%;
+    right: 2.5%;
+    cursor: pointer;
+    z-index: 50;
+}
+.arrow{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+  
