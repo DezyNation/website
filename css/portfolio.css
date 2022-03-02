@@ -44,3 +44,10 @@
       font-size: .8rem;
       font-weight: 400;
   }
+
+  @media (max-width: 768px) {
+    .swiper{
+      width: 85%;
+      height: 30vh;
+    }
+  }
