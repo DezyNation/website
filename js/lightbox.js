@@ -9,7 +9,7 @@ const Partners = [
     {
         name: "Hostinger",
         img: "img/hostingerOffer.png",
-        code: "ONE",
+        code: "DGMAX15",
         website: "https://www.hostg.xyz/aff_c?offer_id=264&aff_id=92097"
     },
     {
