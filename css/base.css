@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500;700&display=swap');
+
 
 *,
 ::after,
@@ -11,22 +13,45 @@
 html{
   scroll-behavior: smooth;
 }
+body{
+  background-color: azure;
+}
 section{
   position: relative;
   width: 100%;
   height: 100vh;
 }
-.main-area{
+
+.container{
   position: relative;
+  padding: 2rem 1rem;
   width: 100%;
   height: auto;
+  display: flex;
+  align-items: center;
 }
+.horizontal{
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container-left{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container-right{
+  position: relative;
+  width: 50%;
+}
+
 
 .heading{
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 25vh;
+  margin: 5vh auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,6 +66,7 @@ section{
   margin: 0 auto;
   align-self: center;
   background: yellow;
+  transform: skewX(-45deg);
 }
 .subheading{
   text-align: center;
@@ -62,7 +88,7 @@ section{
   color: green;
 }
 a{
-  width: 100%;
+  width: auto;
   height: inherit;
   text-decoration: none;
   cursor: pointer;
@@ -92,125 +118,134 @@ a{
 
 
 /* Navbar styling starts here */
+
 header{
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 10vh;
-  background: #222;
-  color: #fff;
-  z-index: 50;
+  height: auto;
 }
 
 nav{
   position: relative;
+  padding: .75rem 3rem;
   width: 100%;
-  height: inherit;
-  padding: 5px 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: #111;
+  color: #FFF;
+  transition: all .5s ease;
 }
-
-.logo{
+.nav-logo{
   position: relative;
   width: auto;
-  height: inherit;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  color: #fff;
+  justify-content: flex-start;
 }
-
-.logo-img{
-  position: relative;
-}
-
-.logo-title{
-  margin-left: 1rem;
-  font-family: 'Poppins', sans-serif;
-}
-
 .menu{
   position: relative;
-  width: 40%;
-  margin-left: 10%;
-  padding: 0 1rem;
+  width: 45vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.menu-item{
-  padding: 5px;
-  color: #fff;
-  transition: all .3s ease;
-}
-.menu-item:hover{
-  background: #FFF;
-  color: #000;
-}
-
-.btn-group{
+.menu-link{
   position: relative;
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  padding: .5rem .75rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FFF;
+  background: none;
+  border-radius: 24px;
+  transition: all .5s ease;
+}
+.menu-link:hover{
+  color: #000;
+  background: #FFF;
 }
 
-.cta{
-  width: 10%;
-  height: 70%;
-  background: none;
+.hero-btn1{
+  width: auto;
+  height: auto;
+  padding: .75rem 1rem;
+  color: #FFF;
   border: 2px solid #FFF;
-  color: #FFF !important;
-  transition: all .3s ease;
+  border-radius: 28px;
+  transition: all .5s ease;
 }
-.cta:hover{
-  background: #FFF;
-  color: #000 !important;
-  cursor: pointer;
+.hero-btn1:hover{
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, .25), -2px -2px 10px rgba(255, 255, 255, .25);
 }
-.cta a, .pay a{
-  color: inherit;
+
+#menu-alt{
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: none;
 }
+#menu-svg{
+  stroke: #FFF;
+  fill: none;
+}
+
 
 
 @media (max-width: 768px) {
+
+  .container{
+    flex-direction: column;
+  }
+  .container-left, .container-right{
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    height: 9.6vh;
+    padding: .9rem;
+    flex-direction: column !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .nav-logo{
+    align-self: flex-start;
+  }
+
+  .menu{
+    width: 100%;
+    margin: 2rem 0 1rem !important;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  #menu-alt{
+    display: unset;
+  }
+
+  .hero-btn1{
+    margin-top: .75rem;
+  }
+
+  .services-menu{
+    top: 6vh;
+    left: 26vw;
+    right:  unset;
+    width: 220px;
+  }
+
   .heading h1{
     font-size: 1.75rem;
   }
   .color-bar{
     width: 6%;
     height: .4rem;
-  }
-
-  
-  nav{
-    height: 9.6vh;
-    padding: 0.9rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .logo, .logo > *{
-    transform: scale(0.9);
-  }
-  .logo-title{
-    display: none;
-  }
-
-  .menu{
-    display: none;
-  }
-  .cta{
-    width: 40%;
-    height: 40px;
   }
 }
 
@@ -380,7 +415,7 @@ footer{
     height: 50px;
     border-radius: 50%;
     bottom: 5%;
-    right: 2.5%;
+    left: 2.5%;
     cursor: pointer;
     z-index: 50;
 }
@@ -393,13 +428,17 @@ footer{
 .chat-btn{
   position: fixed;
   bottom: 5%;
-  left: 2.5%;
-  width: 50px;
-  height: 50px;
+  right: 2.5%;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.25));
   cursor: pointer;
   z-index: 50;
+  transition: all .3s ease;
+}
+.chat-btn:hover{
+  transform: scale(1.5);
 }
 .wa-img{
   width: inherit;
