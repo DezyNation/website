@@ -8,13 +8,13 @@ const closeBtn = document.getElementById("close-btn");
 const Partners = [
     {
         name: "Hostinger",
-        img: "img/hostingerOffer.png",
-        code: "DGMAX15",
+        img: "assets/img/hostingerOffer.png",
+        code: "DIWALI2021",
         website: "https://www.hostg.xyz/aff_c?offer_id=264&aff_id=92097"
     },
     {
         name: "Hostgator",
-        img: "img/hostgatorOffer.png",
+        img: "assets/img/hostgatorOffer.png",
         code: "GATORMODEL",
         website: "https://partners.hostgator.com/dezynation"
     }
