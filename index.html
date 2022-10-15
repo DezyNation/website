@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official website of DezyNation India, website designing company in Delhi. Get your websites and graphic designs at affordable price. Contact us now.">
-    <meta name="keywords" content="website, designing, developer, company, delhi, delhi ncr, web development, designer, near me">
+    <title>Coming Soon!</title>
+
+    <meta name="description"
+        content="Official website of DezyNation India, website designing company in Delhi. Get your websites and graphic designs at affordable price. Contact us now.">
+    <meta name="keywords"
+        content="website, designing, developer, company, delhi, delhi ncr, web development, designer, near me">
     <meta name="theme-color" content="#222222" />
-    
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -17,7 +21,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -25,310 +29,348 @@
     <meta name="msapplication-TileColor" content="#222222">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+        *,
+        ::after,
+        ::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans', sans-serif;
+            text-decoration: none;
+        }
 
-    <title>DezyNation | Home</title>
+        header {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg') 50% 60% /cover no-repeat;
+            background-attachment: fixed;
+        }
+
+        header .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 2rem;
+            width: 100%;
+            height: inherit;
+            background: rgb(36, 35, 32);
+            background: radial-gradient(circle, rgba(36, 35, 32, 0.1825105042016807) 0%, rgba(32, 29, 29, 0.48783263305322133) 46%, rgba(0, 0, 0, 0.742734593837535) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        header .container nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        header .container .title {
+            font-size: 6em;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1em;
+            color: #fff;
+        }
+
+        header .container .content {
+            position: relative;
+            max-width: 45%;
+            margin: 1rem 0;
+            padding: 1.5rem 1.75rem;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.45);
+            color: #FFF;
+            backdrop-filter: blur(5px);
+        }
+
+        header .container form {
+            position: relative;
+            width: 45%;
+            padding: .5rem .75rem;
+            border: 2px solid #FFF;
+            border-radius: 36px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .container form input {
+            position: relative;
+            padding: .5rem;
+            font-size: 1rem;
+            width: 90%;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #FFF;
+        }
+
+        header .container form button {
+            position: relative;
+            padding: .75rem 1.25rem;
+            background: #FFF;
+            color: #000;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-flex;
+            border: none;
+            border-radius: inherit;
+            outline: none;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+        header .container form button:hover{
+            transform: scale(.9);
+        }
+        header .container form button svg{
+            position: relative;
+            margin-right: .75rem;
+        }
+        ::placeholder {
+            color: aqua;
+        }
+
+        .section {
+            position: relative;
+            width: 100%;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section .title {
+            position: relative;
+            text-align: center;
+            color: #333;
+        }
+
+        .title-bar {
+            position: relative;
+            margin: 1rem auto;
+            width: 160px;
+            height: 3px;
+            background-color: #666;
+            border-radius: 8px;
+        }
+
+        .section .row {
+            position: relative;
+            margin-top: 5vh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .portfolio .row .col {
+            position: relative;
+            margin: 2rem;
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio .row .col img {
+            position: relative;
+            width: 100%;
+        }
+
+        .portfolio .row .col .content {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .portfolio .row .col .content .title {
+            position: relative;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #222;
+            text-align: left;
+        }
+
+        .portfolio .row .col .content .desc {
+            position: relative;
+            height: 4rem;
+            font-size: .9rem;
+            color: darkslategray;
+            text-align: left;
+        }
+
+        .team {
+            background: azure;
+        }
+
+        .team .row .col {
+            position: relative;
+            margin: 1rem;
+            width: 240px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .team .row .col .profile {
+            position: relative;
+            margin-bottom: 1.5rem;
+            width: 70%;
+            height: auto;
+            transition: all .3s ease;
+        }
+
+        .team .row .col:hover .profile {
+            transform: translateY(-8px);
+        }
+
+        .team .row .col .member {
+            position: relative;
+            margin-bottom: .5rem;
+            font-size: 1rem;
+            color: #222;
+        }
+
+        .team .row .col .role {
+            position: relative;
+            font-size: .75rem;
+            color: darkslategray;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <nav id="nav">
-            <div class="nav-logo">   
-                <svg
-                width="48"
-                height="48"
-                viewBox="0 0 135.46667 135.46667"
-                version="1.1"
-                id="svg5"
-                class="logo-img"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg">
-                <defs
-                id="defs2" />
-                <g
-                id="layer1">
-                <g
-                    aria-label="D"
-                    id="text25291"
-                    style="font-size:22.5778px;line-height:1.25;font-family:Algerian;-inkscape-font-specification:Algerian;letter-spacing:0px;word-spacing:0px;stroke-width:0"
-                    transform="translate(-28.21829)" />
-                <g
-                    aria-label="D"
-                    id="g37718"
-                    style="font-size:22.5778px;line-height:1.25;font-family:Algerian;-inkscape-font-specification:Algerian;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0"
-                    transform="translate(21.64084)" />
-                <g
-                    aria-label="N"
-                    id="text39080"
-                    style="font-size:22.5778px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583" />
-                <g
-                    aria-label="N"
-                    id="g44939"
-                    style="font-size:22.5778px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-                    transform="translate(41.346596)" />
-                <path
-                    id="path55004"
-                    style="font-size:21.6809px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:8.99752"
-                    d="M 16.933335,5.0321851 V 130.43469 h 28.39805 c 5.68608,0 10.96649,-0.21723 15.84,-0.65472 4.87379,-0.50002 9.40499,-1.34222 13.59128,-2.52942 7.31054,-2.06192 13.68165,-4.97045 19.11772,-8.7194 5.49847,-3.74895 10.060815,-8.18263 13.684675,-13.3062 3.68654,-5.18604 6.4353,-10.998624 8.24737,-17.434334 1.81193,-6.435692 2.72091,-13.30791 2.72091,-20.618383 0,-7.247976 -0.90926,-13.996038 -2.72091,-20.244297 -1.74954,-6.310728 -4.4363,-11.968134 -8.06031,-16.966746 -3.56146,-5.061095 -8.088275,-9.432692 -13.586745,-13.119162 -5.43594,-3.68647 -11.81171,-6.559491 -19.12212,-8.621421 -4.18628,-1.187246 -8.71762,-2.0029999 -13.59113,-2.4403759 -4.87365,-0.499886 -10.14982,-0.748252 -15.83562,-0.748252 z M 56.031955,38.946986 105.71103,37.224471 80.012495,80.477675 Z m -7.63173,16.042965 22.25515,43.252465 h -47.95669 z" />
-                </g>
-                </svg>
-                <h1 class="logo-font">DezyNation</h1>
-            </div>
-            <div class="menu" id="menu">
-                <a href="#" class="menu-link">home</a>
-                <a href="portfolio.html" class="menu-link">portfolio</a>
-                <a href="#services" class="menu-link">services</a>
-                <a href="about.html" class="menu-link">about us</a>
-                <a href="https://wa.me/917838074742"><p class="hero-btn1"><i class="bi bi-whatsapp"></i>&nbsp;&nbsp;Chat With A Professional</p></a>
-            </div>
-            <svg id="menu-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24" onclick="toggleMenu()"><path id="menu-svg" d="M3,18H21M3,12H21M3,6H21" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
-        </nav>
-    </header>
-
-    <div class="banner">
-        <a href="#offers" class="banner-content">
-            <h1>Special Discounts On <strong>Hostinger & Hostgator</strong></h1>
-            <h3>Check Out Now!</h3>
-        </a>
-    </div>
-
-    <iframe src="" frameborder="0" title="hidden-iframe" id="hidden-iframe" name="hidden-iframe" class="hidden-iframe"></iframe>
-    <div class="hero">
-        <div class="container horizontal hero-container">
-            <div class="container-left hero-left">
-                <h1 class="hero-title">Affordable Yet Professional!</h1>
-                <p class="hero-desc">
-                    We are team of freelancers with years of expertise in web design & development, graphic design, digital marketing and business strategy building.<br>
-                    <span style="color: yellow;">Our team is helping businesses all over India get themselves online!</span>
-                </p>
-                <div class="btn-div">
-                    <a href="https://wa.me/917838074742" class="hero-btn quote"><i class="bi bi-whatsapp"></i>&nbsp;&nbsp;<p>Contact Us</p></a>
-                    <a href="portfolio.html" class="hero-btn portfolio"><p>See Our Past Work</p></a>
-                </div>
-            </div>
-            <div class="container-right hero-right">
-                <img src="img/heroimg.jpg" class="heroimg">
-            </div>
-        </div>        
-    </div>
-
-    <div class="heading" id="services">
-        <span class="color-bar"></span>
-        <h1>Our Services</h1>
-        <span class="color-bar"></span>
-    </div>
-    <div class="services-wrapper">
-        <div class="services-card">
-            <div class="pricing-card">
-                <img src="img/personal.jpg" alt="Website Development" class="pricing-card--img">
-                <div class="card-content">
-                    <h2 class="pricing-card--title">Websites</h2>
-                    <div class="card-text">
-                        <p>
-                            We design and develop almost all kinds of websites (e.g., Portfolio, E-commerce, Survey, Business, Startup websites etc.)<br>
-                            Contact us to get yours.
-                        </p>
-                    </div>
-                    <a href="https://wa.me/917838074742" target="_blank" class="contact-wa"><i class="bi bi-whatsapp"></i>&nbsp;&nbsp;<p>Chat On WhatsApp</p></a>
-                </div>
-            </div>
-        </div>
-        <div class="services-card">
-            <div class="pricing-card">
-                <img src="https://images.unsplash.com/photo-1626785774625-ddcddc3445e9" alt="Graphic Designing" class="pricing-card--img">
-                <div class="card-content">
-                    <h2 class="pricing-card--title">Graphic Design</h2>
-                    <div class="card-text">
-                        <p>
-                            Get your social media posts, posters, phamplets, logo, visiting cards, banners etc. designed by our professional graphic designers in Delhi.
-                        </p>
-                    </div>
-                    <a href="https://wa.me/917838074742" target="_blank" class="contact-wa"><i class="bi bi-whatsapp"></i>&nbsp;&nbsp;<p>Chat On WhatsApp</p></a>
-                </div>
-            </div>
-        </div>
-        <div class="services-card">
-            <div class="pricing-card">
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Digital Marketing" class="pricing-card--img">
-                <div class="card-content">
-                    <h2 class="pricing-card--title">Digital Marketing</h2>
-                    <div class="card-text">
-                        <p>
-                            Having a digital approach of your business is crucial in today's era. That's why we will help you establish your brand identitiy on digital platforms.
-                        </p>
-                    </div>
-                    <a href="https://wa.me/917838074742" target="_blank" class="contact-wa"><i class="bi bi-whatsapp"></i>&nbsp;&nbsp;<p>Chat On WhatsApp</p></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br>
-
-    <div class="affiliates" id="offers">
-        <h3>We've partnered with hosting companies, so you don't have to go anywhere else for discounts. <br>Click on any hosting provider to get the offer.</h3>
-        <div class="partners">
-            <img src="img/Hostinger_Horizontal_Purple.png" alt="Hostinger" class="hostinger" onclick="openLightbox(1)">
-            <img src="img/Hostgator-logo.png" alt="Hostgator" class="hostgator" onclick="openLightbox(2)">
-        </div>
-    </div>
-
-    <div class="heading">
-        <span class="color-bar"></span>
-        <h1>What our clients say</h1>
-        <span class="color-bar"></span>
-        <a href="https://g.page/dezynation?share" target="_blank" class="google-link">Check out our Google Business Profile for more reviews</a>
-    </div>
-    <br>
-    <div class="feedback-wrapper">
-        <div class="feedback-card">
-            <div class="card-content">
-                <h3>Gaurav</h3>
-                <h5>&starf;&starf;&starf;&starf;&starf;</h5>
-                <p class="feedback-msg">The work was very professionally done. Our requirements and needs were satisfied! Liked the experience.</p>
-            </div>
-        </div>
-        <div class="feedback-card">
-            <div class="card-content">
-                <h3>Rayyan Ehtesham</h3>
-                <h5>&starf;&starf;&starf;&starf;&starf;</h5>
-                <p class="feedback-msg">Really loved their work,they were fast and really efficient with all the work given to them, really looking forward to work with them again</p>
-            </div>
-        </div>
-        <div class="feedback-card">
-            <div class="card-content">
-                <h3>Jatin Tyagi</h3>
-                <h5>&starf;&starf;&starf;&starf;&starf;</h5>
-                <p class="feedback-msg">The work was very professionally done. My  requirements and needs were satisfied! I Liked the experience.</p>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <h3 class="subheading">Some Of Our Top Clients</h3>
-    <div class="clients-wrapper">
-        <a href="https://powercontrolindia.in/" target="_blank"><img src="img/pciLogo.png" alt="Power Control India" class="clients-img"></a>
-        <a href="https://sbtgroup.net/" target="_blank"><img src="img/sbtLogo.png" alt="Small Business Transaction Token" class="clients-img"></a>
-        <a href="https://kiaramakeover.com/" target="_blank"><img src="img/kiaraLogo.png" alt="Kiara Makeover By Hitesha Chaudhary" class="kiaraimg" class="clients-img"></a>
-        <a href="https://cloudmagician.in/" target="_blank"><img src="img/cmag.png" alt="Cloud Magician" class="clients-img"></a>
-        <a href="#"><img src="img/jhabib.png" alt="Jawed Habib" class="kiaraimg clients-img"></a>
-        <a href="https://trendbiz.in"><img src="img/trendbizlogo.png" alt="TrendBiz" class="clients-img"></a>
-    </div>
-
-    <br>
-    <br>
-    <h3 class="subheading">NGOs We Worked For FREE!</h3>
-    <div class="clients-wrapper">
-        <a href="https://powercontrolindia.in/" target="_blank"><img src="img/pfa.png" alt="Pankration Fitness Academy"></a>
-    </div>
-
-
-
-
-    <section id="affiliate-offer">
-        <div class="lightbox">
-            <img src="img/hostingerOffer.png" alt="Offer" id="lightboxImage">
-            <br>
-            <div class="lightbox-content">
-                <p>Use this coupon code on <strong><span id="lightboxCompany">Hostinger</span></strong> website during checkout:</p>
-                <h3 id="lightboxCode">DIWALI2021</h3>
-                <p style="color: green; display: none;" id="copySuccess">Code copied!</p>
-                <div class="popup-btn-div"><a href="https://www.hostg.xyz/aff_c?offer_id=264&aff_id=92097" target="_blank" id="lightboxLink">Click Here To Apply Offer &#10148;</a></div>
-            </div>
-        </div>
-        <div id="close-btn" onclick="closeLightbox()"><h3>X</h3></div>
-    </section>
-
-    <!-- Footer starts here -->
-    <footer>
-        <div class="footer-row">
-            <div class="footer-column branding-column">
-                <div class="footer-branding">
-                    <svg
-                        width="48"
-                        height="48"
-                        viewBox="0 0 135.46667 135.46667"
-                        version="1.1"
-                        id="svg5"
-                        class="logo-img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:svg="http://www.w3.org/2000/svg">
-                        <defs
-                        id="defs2" />
-                        <g
-                        id="layer1">
-                        <g
-                            aria-label="D"
-                            id="text25291"
+        <div class="container">
+            <nav>
+                <svg width="32" height="32" viewBox="0 0 135.46667 135.46667" version="1.1" id="svg5" class="logo-img"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <defs id="defs2" />
+                    <g id="layer1">
+                        <g aria-label="D" id="text25291"
                             style="font-size:22.5778px;line-height:1.25;font-family:Algerian;-inkscape-font-specification:Algerian;letter-spacing:0px;word-spacing:0px;stroke-width:0"
                             transform="translate(-28.21829)" />
-                        <g
-                            aria-label="D"
-                            id="g37718"
+                        <g aria-label="D" id="g37718"
                             style="font-size:22.5778px;line-height:1.25;font-family:Algerian;-inkscape-font-specification:Algerian;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0"
                             transform="translate(21.64084)" />
-                        <g
-                            aria-label="N"
-                            id="text39080"
+                        <g aria-label="N" id="text39080"
                             style="font-size:22.5778px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583" />
-                        <g
-                            aria-label="N"
-                            id="g44939"
+                        <g aria-label="N" id="g44939"
                             style="font-size:22.5778px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
                             transform="translate(41.346596)" />
-                        <path
-                            id="path55004"
+                        <path id="path55004"
                             style="font-size:21.6809px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:8.99752"
                             d="M 16.933335,5.0321851 V 130.43469 h 28.39805 c 5.68608,0 10.96649,-0.21723 15.84,-0.65472 4.87379,-0.50002 9.40499,-1.34222 13.59128,-2.52942 7.31054,-2.06192 13.68165,-4.97045 19.11772,-8.7194 5.49847,-3.74895 10.060815,-8.18263 13.684675,-13.3062 3.68654,-5.18604 6.4353,-10.998624 8.24737,-17.434334 1.81193,-6.435692 2.72091,-13.30791 2.72091,-20.618383 0,-7.247976 -0.90926,-13.996038 -2.72091,-20.244297 -1.74954,-6.310728 -4.4363,-11.968134 -8.06031,-16.966746 -3.56146,-5.061095 -8.088275,-9.432692 -13.586745,-13.119162 -5.43594,-3.68647 -11.81171,-6.559491 -19.12212,-8.621421 -4.18628,-1.187246 -8.71762,-2.0029999 -13.59113,-2.4403759 -4.87365,-0.499886 -10.14982,-0.748252 -15.83562,-0.748252 z M 56.031955,38.946986 105.71103,37.224471 80.012495,80.477675 Z m -7.63173,16.042965 22.25515,43.252465 h -47.95669 z" />
-                        </g>
+                    </g>
+                </svg>
+                <h1 style="color: #FFF; font-size: 1.5rem; font-weight: 800;">ezyNation</h1>
+            </nav>
+            <h1 class="title">Coming<br>Soon!</h1>
+            <p class="content">
+                We're building a next generation freelancing platform. Businesses will be able to find
+                trustworthy talent for their projects. Freelancers will get decent money and gain experience from real
+                world
+                projects.
+                <br><br>
+                Send us your recommendations for this platform, our team will make sure to address all amazing
+                recommendations!
+            </p>
+            <br><br>
+            <p style="color: #FFF;margin-bottom: 1rem;">Tell me when it's ready:</p>
+            <form action="#">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
                     </svg>
-                    <h1 class="brand-name">DezyNation</h1>
+                    send
+                </button>
+            </form>
+        </div>
+
+    </header>
+    <div class="section portfolio">
+        <h1 class="title">Our Recent Projects</h1>
+        <span class="title-bar"></span>
+        <div class="row">
+            <a href="https://autoadspro.com/" class="col">
+                <img src="https://link.storjshare.io/raw/jxrr7soctxy46k2naxjy2k27mbqq/website-assets/screenshots/autoadspro.png"
+                    alt="Auto Ads Pro">
+                <div class="content">
+                    <h1 class="title">Auto Ads Pro</h1>
+                    <p class="desc">A platform to create, run and manage ad campaigns on various platforms like Google
+                        (Search, YouTube, Gmail, etc.), Instagram, Facebook etc.</p>
                 </div>
-                <br>
-                <p class="footer-desc">We started DezyNation with a vision to bring as many businesses online as possible. And now we are serving our clients globally.</p>
-            </div>
-            <div class="footer-column">
-                <div class="footer-heading"><h3>Company</h3><h4 class="down-arrow">&#x276E;</h4></div>
-                <a href="#" class="footer-link">About Us</a>
-                <a href="index.html#form-area" class="footer-link"">Contact</a>
-            </div>
-            <div class="footer-column">
-                <div class="footer-heading"><h3>Services</h3><h4 class="down-arrow">&#x276E;</h4></div>
-                <a href="portfolio.html" class="footer-link">Website Development</a>
-                <a href="index.html#form-area" class="footer-link">Digital Marketing</a>
-                <a href="portfolio.html" class="footer-link">Graphic Designing</a>
-            </div>
-            <div class="footer-column">
-                <div class="footer-heading"><h3>Important</h3><h4 class="down-arrow">&#x276E;</h4></div>
-                <a href="terms.html" class="footer-link">Terms & Conditions</a>
-                <a href="terms.html" class="footer-link">Privacy Policy</a>
-            </div>
+            </a>
+            <a href="https://autoadspro.com/" class="col">
+                <img src="https://link.storjshare.io/raw/jxuv5kghav2k2zww5asottfdy3ua/website-assets/screenshots/cloudmagician.png"
+                    alt="Auto Ads Pro">
+                <div class="content">
+                    <h1 class="title">Cloud Magician</h1>
+                    <p class="desc">Technology infrastructure management and DevOps services company.</p>
+                </div>
+            </a>
+            <a href="https://autoadspro.com/" class="col">
+                <img src="https://link.storjshare.io/raw/jx3u2necjdipclf7thwn6lroehyq/website-assets/screenshots/edulec.png"
+                    alt="Auto Ads Pro">
+                <div class="content">
+                    <h1 class="title">Edulec</h1>
+                    <p class="desc">Course purchasing and viewing platform with affiliate features.</p>
+                </div>
+            </a>
         </div>
-        <br>
-        <br>
-        <div class="footer-row">
-            <div class="social">
-                <p>&copy; Copyright 2022 DezyNation India - All Rights Reserved</p>
-            </div>
-        </div>
-    </footer>
-
-    
-    <div class="up-arrow">
-        <a href="#"><img src="img/up-arrow.png" alt="Go to top" class="arrow"></a>
     </div>
-
-    <a href="https://wa.me/917838074742" target="_blank" class="chat-btn"><img src="img/whatsapp.png" alt="Chat With Us" class="wa-img"></a>
-
-    <noscript>You need to enable JavaScript to view this website.</noscript>
-    <script>
-        function showAlert() {
-        alert("Thanks! We will contact you soon")
-        }   
-    </script>
-    <script src="js/lightbox.js"></script>
-    <script src="js/navbar.js"></script>
-
+    <div class="section team">
+        <h1 class="title">Our Passionate Team</h1>
+        <span class="title-bar"></span>
+        <div class="row">
+            <a href="https://www.linkedin.com/in/kulnooralam/" class="col">
+                <img src="https://link.storjshare.io/raw/juekcfyjbgsqdaap45pqbvbq2eeq/website-assets/screenshots/man.png"
+                    alt="Kulnoor Alam" class="profile">
+                <h3 class="member">Kulnoor Alam</h3>
+                <p class="role">Graphic Designer</p>
+            </a>
+            <a href="https://www.linkedin.com/in/rishi-kumar-a755ba21a/" class="col">
+                <img src="https://link.storjshare.io/raw/juekcfyjbgsqdaap45pqbvbq2eeq/website-assets/screenshots/man.png"
+                    alt="Rishi" class="profile">
+                <h3 class="member">Rishi</h3>
+                <p class="role">Backend Developer</p>
+            </a>
+            <a href="https://www.linkedin.com/in/sangam-kumar-b4a2511aa/" target="_blank" class="col">
+                <img src="https://link.storjshare.io/raw/juekcfyjbgsqdaap45pqbvbq2eeq/website-assets/screenshots/man.png"
+                    alt="Sangam Kumar" class="profile">
+                <h3 class="member">Sangam Kumar</h3>
+                <p class="role">Frontend Developer</p>
+            </a>
+        </div>
+    </div>
+    <a href="https://wa.me/917838074742" target="_blank" class="chat-btn" style="position: fixed; bottom: 1rem; right: 1rem;"><img src="img/whatsapp.png" alt="Chat With Us" class="wa-img"></a>
 </body>
+
 </html>
