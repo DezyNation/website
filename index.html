@@ -48,18 +48,16 @@
         header {
             position: relative;
             width: 100%;
-            height: 100vh;
+            height: auto;
             background: url('https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg') 50% 60% /cover no-repeat;
             background-attachment: fixed;
         }
 
         header .container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 2rem;
+            position: relative;
+            padding: 10vh 2rem;
             width: 100%;
-            height: inherit;
+            height: auto;
             background: rgb(36, 35, 32);
             background: radial-gradient(circle, rgba(36, 35, 32, 0.1825105042016807) 0%, rgba(32, 29, 29, 0.48783263305322133) 46%, rgba(0, 0, 0, 0.742734593837535) 100%);
             display: flex;
@@ -81,6 +79,7 @@
         }
 
         header .container .title {
+            max-width: 30%;
             font-size: 6em;
             font-family: 'Poppins', sans-serif;
             line-height: 1em;
@@ -261,6 +260,44 @@
             font-size: .75rem;
             color: darkslategray;
         }
+
+        @media (max-width: 768px) {
+            header .container{
+                padding: 1rem;
+                align-items: center;
+                justify-content: center;
+            }
+
+            header .container nav{
+                position: relative;
+                margin-bottom: 2rem;
+                justify-content: center;
+            }
+
+            header .container .title{
+                max-width: unset;
+                font-size: 2.5rem;
+            }
+            header .container .content{
+                max-width: 100%;
+            }
+
+            header .container form{
+                width: 100%;
+            }
+            header .container form button{
+                padding: .5rem .75rem;
+                font-size: 1rem;
+            }
+
+            .section .row .col{
+                width: 100%;
+            }
+
+            .portfolio .row .col .content .desc{
+                height: auto;
+            }
+        }
     </style>
 </head>
 
@@ -290,7 +327,7 @@
                 </svg>
                 <h1 style="color: #FFF; font-size: 1.5rem; font-weight: 800;">ezyNation</h1>
             </nav>
-            <h1 class="title">Coming<br>Soon!</h1>
+            <h1 class="title">Coming Soon!</h1>
             <p class="content">
                 We're building a next generation freelancing platform. Businesses will be able to find
                 trustworthy talent for their projects. Freelancers will get decent money and gain experience from real
@@ -328,7 +365,7 @@
                         (Search, YouTube, Gmail, etc.), Instagram, Facebook etc.</p>
                 </div>
             </a>
-            <a href="https://cloudmagician.in/" class="col">
+            <a href="https://autoadspro.com/" class="col">
                 <img src="https://link.storjshare.io/raw/jxuv5kghav2k2zww5asottfdy3ua/website-assets/screenshots/cloudmagician.png"
                     alt="Auto Ads Pro">
                 <div class="content">
@@ -336,7 +373,7 @@
                     <p class="desc">Technology infrastructure management and DevOps services company.</p>
                 </div>
             </a>
-            <a href="https://edulec.in/" class="col">
+            <a href="https://autoadspro.com/" class="col">
                 <img src="https://link.storjshare.io/raw/jx3u2necjdipclf7thwn6lroehyq/website-assets/screenshots/edulec.png"
                     alt="Auto Ads Pro">
                 <div class="content">
@@ -370,7 +407,7 @@
             </a>
         </div>
     </div>
-    <a href="https://wa.me/917838074742" target="_blank" class="chat-btn" style="position: fixed; bottom: 1rem; right: 1rem;"><img src="img/whatsapp.png" alt="Chat With Us" class="wa-img" style="width: 48px; height: auto;"></a>
+    <a href="https://wa.me/917838074742" target="_blank" class="chat-btn" style="position: fixed; bottom: 1rem; right: 2rem;"><img src="https://cdn-icons-png.flaticon.com/512/4401/4401461.png" alt="Chat With Us" class="wa-img" style="width: 48px; height: auto;"></a>
 </body>
 
 </html>
