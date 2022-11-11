@@ -29,10 +29,18 @@
     <meta name="msapplication-TileColor" content="#222222">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 
+    <meta property="og:title" content="DezyNation">
+    <meta property="og:description" content="We build free websites for NGOs.">
+    <meta property="og:image"
+        content="https://link.storjshare.io/raw/jvc6hx67i7hojnsro6hic6g76vsa/website-assets/socialshare.png">
+    <meta property="og:url" content="https://dezynation.com/">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <style>
         *,
@@ -51,6 +59,15 @@
             height: auto;
             background: url('https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg') 50% 60% /cover no-repeat;
             background-attachment: fixed;
+        }
+
+        header .offers-banner {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+            background: khaki;
+            text-align: center;
         }
 
         header .container {
@@ -135,13 +152,16 @@
             cursor: pointer;
             transition: all .3s ease;
         }
-        header .container form button:hover{
+
+        header .container form button:hover {
             transform: scale(.9);
         }
-        header .container form button svg{
+
+        header .container form button svg {
             position: relative;
             margin-right: .75rem;
         }
+
         ::placeholder {
             color: aqua;
         }
@@ -263,39 +283,41 @@
         }
 
         @media (max-width: 768px) {
-            header .container{
+            header .container {
                 padding: 1rem;
                 align-items: center;
                 justify-content: center;
             }
 
-            header .container nav{
+            header .container nav {
                 position: relative;
                 margin-bottom: 2rem;
                 justify-content: center;
             }
 
-            header .container .title{
+            header .container .title {
                 max-width: unset;
                 font-size: 2.5rem;
             }
-            header .container .content{
+
+            header .container .content {
                 max-width: 100%;
             }
 
-            header .container form{
+            header .container form {
                 width: 100%;
             }
-            header .container form button{
+
+            header .container form button {
                 padding: .5rem .75rem;
                 font-size: 1rem;
             }
 
-            .section .row .col{
+            .section .row .col {
                 width: 100%;
             }
 
-            .portfolio .row .col .content .desc{
+            .portfolio .row .col .content .desc {
                 height: auto;
             }
         }
@@ -304,6 +326,10 @@
 
 <body>
     <header>
+        <div class="offers-banner">
+            <p><a href="offers" style="color: #000;">🎁  &nbsp;Click
+                    here to check out ongoing offers!</a></p>
+        </div>
         <div class="container">
             <nav>
                 <svg width="32" height="32" viewBox="0 0 135.46667 135.46667" version="1.1" id="svg5" class="logo-img"
@@ -335,12 +361,14 @@
                 world
                 projects.
                 <br><br>
-                Send us your recommendations for this platform, our team will make sure to address all amazing
+                Send us your recommendations for this platform at feedback@dezynation.com, our team will make sure to address all amazing
                 recommendations!
             </p>
             <br><br>
             <p style="color: #FFF;margin-bottom: 1rem;">Tell me when it's ready:</p>
-            <form action="https://api.web3forms.com/submit" onsubmit="alert('Thanks! We'll make sure to inform you once this is ready.')" method="POST">
+            <form action="https://api.web3forms.com/submit"
+                onsubmit="if (!window.__cfRLUnblockHandlers) return false; alert('Thanks! We will make sure to inform you once this is ready.')"
+                method="POST" data-cf-modified-89343a3a3c6cc772d28f1acf-="">
                 <input type="hidden" name="access_key" value="a19084e2-0d28-46f7-bcc4-01aa1dc03d02">
                 <input type="email" name="Email" id="email" placeholder="Enter your email">
                 <button type="submit">
@@ -409,7 +437,10 @@
             </a>
         </div>
     </div>
-    <a href="https://wa.me/917838074742" target="_blank" class="chat-btn" style="position: fixed; bottom: 1rem; right: 2rem;"><img src="https://cdn-icons-png.flaticon.com/512/4401/4401461.png" alt="Chat With Us" class="wa-img" style="width: 48px; height: auto;"></a>
+    <a href="https://wa.me/917838074742" target="_blank" class="chat-btn"
+        style="position: fixed; bottom: 1rem; right: 2rem;"><img
+            src="https://cdn-icons-png.flaticon.com/512/4401/4401461.png" alt="Chat With Us" class="wa-img"
+            style="width: 48px; height: auto;"></a>
 </body>
 
 </html>
